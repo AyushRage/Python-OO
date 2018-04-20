@@ -14,6 +14,6 @@ class Student:
         print("Current Year of Engineering: ",self.__yearofengg)
         print("Branch Name: ",branchname)
 
-deets=Student(1,"Addy",46.34,"Hostle",3,"CSE")
+deets=Student(15001,"Jack",125.5,"H",1,"Civil")
 
 #deets=Student("PUT VALUES ACCORDINGLY FOR 2nd PART OF THIS ASSIGNMENT :D")
