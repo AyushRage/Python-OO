@@ -75,8 +75,8 @@ Output Expected:
   Registration Id : 1001
   
 Summary of this assignment: In this assignment, you have learnt
-  Importance of self
-  Usage of self for accessing class members
+1. Importance of self
+2. Usage of self for accessing class members
   
   
 ## Assignment 4: Using default parameters in Method
@@ -91,3 +91,173 @@ Problem Description: To initialize the members of the class during object instan
 +displayheader(char c) : void
 +displayheader(char c, int n) : void
 +displayheader(string s) : void
+
+Default parameters need to be assigned properly in such a way to get following output on the screen:
+
+```
+Annual Report – FY16
+====================
+
+****************************************************************
+                    Rict Engineering College
+****************************************************************
+```
+
+Summary of this assignment: In this assignment, you have learnt
+1. Creating the method with default arguments
+2. Invoking method which is having default arguments
+
+
+## Assignment 8: Debugging using Python
+
+Objective: To do a self-review on python programming level
+
+Problem Description: What would be the output for the following programs? If there is an error in the program, analyze it, fix it and execute it. Also write the inference drawn from each code snippet.
+
+#### Code 1
+```
+class Parent:
+    
+    def setnum(self, val):
+        self.__num = val
+        
+    def getnum(self):
+        return self.__num
+
+    def display(self):
+        print("Number : ", self.__num)
+
+class Child(Parent):
+    
+    def setval(self, num):
+        self.__val = num
+
+    def getval(self):
+        return self.__val
+
+    def display(self,num,val):
+        print("Value : ", self.__val)
+        print("Number : ", self.__num)
+
+child = Child()
+child.setnum(10)
+child.setval(20)
+child.display()
+```
+
+#### Code 2
+```
+class Parent:
+
+    def setnum(self, val):
+        self.__num = val
+
+    def getnum(self):
+        return self.__num
+
+    def display(self):
+        print("Number : ", self.__num)
+
+class Child(Parent):
+    
+    def setval(self, num):
+        self.__val = num
+
+    def getval(self):
+        return self.__val
+
+    def display(self):
+        print("Value : ", self.__val)
+        super().display()
+
+child = Child()
+child.setnum(10)
+child.setval(20)
+child.display()
+```
+
+#### Code 3
+```
+class StaticDemo:
+    count = 10
+    
+    def __init__(self):
+        StaticDemo.count = StaticDemo.count + 1
+
+    @staticmethod
+    def display():
+        print(count)
+
+s1 = StaticDemo()
+s2 = StaticDemo()
+s1.display()
+```
+
+#### Code 4
+```
+class Animal:
+    
+    @classmethod
+    def testclassmethod(cls):
+        print("Class Method in Animal class is invoked")
+
+    def testinstancemethod(self):
+        print("Instance Method in Animal class is invoked")
+
+class Cat(Animal):
+    
+    @classmethod
+    def testclassmethod(cls):
+        print("Class Method in Cat class is invoked")
+        
+    def testinstancemethod(self):
+        print("Instance Method in Cat class is invoked")
+        
+mycat = Cat()
+myanimal = Animal()
+myanimal = mycat
+Animal.testclassmethod()
+myanimal.testinstancemethod()
+```
+
+#### Code 5
+```
+class ClassA:
+    def methodone(self):
+        print("First method in Class A")
+
+    def methodtwo(self):
+        print("Second method in Class A")
+
+    @staticmethod
+    def methodthree():
+        print("Third static method in Class A")
+
+    @staticmethod
+    def methodfour():
+        print("Fourth static method in Class A")
+
+class ClassB(ClassA):
+    @staticmethod
+    def methodone():
+        print("First static method in Class B")
+
+    def methodtwo(self):
+        print("Second method in Class B")
+        super().methodtwo()
+
+        def methodthree(self):
+            print("Third method in Class B")
+
+        @staticmethod
+        def methodfour():
+            print("Fourth static method in Class B")
+            super().methodfour()
+
+b = ClassB()
+b.methodone()
+b.methodtwo()
+b.methodthree()
+b.methodfour()
+```
+
