@@ -35,15 +35,11 @@ Problem Description: Write a Python program for the class diagram given below:
 +getresidentialstatus(): char
 +getyearofengg() : int
 
-#### Step 1: Create Student.py as per the class diagram
-
-#### Step 2: Define all setter and getter methods
-
-#### Step 3: Create a reference for student class with the name of objstu
-
-#### Step 4: Invoke the corresponding setter methods using objstu and set following values to object
-
-#### Step 5: Invoke the corresponding getter method to display the student details as given below:
+Step 1: Create Student.py as per the class diagram
+Step 2: Define all setter and getter methods
+Step 3: Create a reference for student class with the name of objstu
+Step 4: Invoke the corresponding setter methods using objstu and set following values to object
+Step 5: Invoke the corresponding getter method to display the student details as given below:
   Student Id :
   Qualifying Marks :
   Residential Status :
@@ -53,3 +49,31 @@ Summary of this assignment: In this assignment, you have learnt
 1. How to create a class, instantiate object
 2. Invoking methods using object
 3. Execute a Python program
+
+
+## Assignment 3 : Debugging – self reference
+
+Objective: Understand the importance of self reference to access the object members.
+
+Problem Description:  Debug the below given Python code to give the output, shown after the code.
+
+#### Code
+```
+class Registration:
+    def setregistrationid (self, rid):
+        __registrationid = rid
+    
+    def getregistrationid (self):
+        return __registrationid
+
+objreg = Registration()
+objreg.setregistrationid(1001)
+print("Registration Id : ", objreg.getregistrationid())
+```
+
+Output Expected:
+  Registration Id : 1001
+  
+Summary of this assignment: In this assignment, you have learnt
+  Importance of self
+  Usage of self for accessing class members
