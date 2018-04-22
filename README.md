@@ -22,12 +22,11 @@ Problem Description: Write a Python program for the class diagram given below:
 
 |Student|
 |---|
-|-studentid : int|
-|-qualifyingexammarks : float|
-|-residentialstatus : char|
-|-yearofengg : int|
----
-|+setstudentid(int) : void|
+|-studentid : int
+-qualifyingexammarks : float
+-residentialstatus : char
+-yearofengg : int
++setstudentid(int) : void|
 |+setqualifyingexammarks(float) : void|
 |+setresidentialstatus(char) : void|
 |+setyearofengg(int) : void|
