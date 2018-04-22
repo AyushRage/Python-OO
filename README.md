@@ -34,3 +34,18 @@ Problem Description: Write a Python program for the class diagram given below:
 +getqualifyingexammarks() : float
 +getresidentialstatus(): char
 +getyearofengg() : int
+
+Step 1: Create Student.py as per the class diagram
+Step 2: Define all setter and getter methods
+Step 3: Create a reference for student class with the name of objstu
+Step 4: Invoke the corresponding setter methods using objstu and set following values to object
+Step 5: Invoke the corresponding getter method to display the student details as given below:
+  Student Id :
+  Qualifying Marks :
+  Residential Status :
+  Current Year of Engineering :
+  
+Summary of this assignment: In this assignment, you have learnt
+ How to create a class, instantiate object
+ Invoking methods using object
+ Execute a Python program
