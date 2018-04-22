@@ -50,6 +50,6 @@ Problem Description: Write a Python program for the class diagram given below:
   Current Year of Engineering :
   
 Summary of this assignment: In this assignment, you have learnt
- How to create a class, instantiate object
- Invoking methods using object
- Execute a Python program
+1. How to create a class, instantiate object
+2. Invoking methods using object
+3. Execute a Python program
