@@ -77,3 +77,16 @@ Output Expected:
 Summary of this assignment: In this assignment, you have learnt
   Importance of self
   Usage of self for accessing class members
+  
+  
+## Assignment 4: Using default parameters in Method
+
+Objective: For one of the above given business scenario to use default parameters in __init__() method
+
+Problem Description: To initialize the members of the class during object instantiation __init__() method is needed. By using default parameters in __init__() method we can initialize the members as per the requirement. Write a Python program for the class diagram given below:
+
+|Student|
+|---|
++displayheader(char c) : void
++displayheader(char c, int n) : void
++displayheader(string s) : void
