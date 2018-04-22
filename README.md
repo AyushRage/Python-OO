@@ -87,6 +87,7 @@ Problem Description: To initialize the members of the class during object instan
 
 |Student|
 |---|
+|---|
 +displayheader(char c) : void
 +displayheader(char c, int n) : void
 +displayheader(string s) : void
