@@ -21,6 +21,7 @@ Objective: Read the above given business scenario to create student class and to
 Problem Description: Write a Python program for the class diagram given below:
 
 |Student|
+|---|
 |-studentid : int|
 |-qualifyingexammarks : float|
 |-residentialstatus : char|
